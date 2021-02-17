@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.centered {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+#wait {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: #0f1513c2;
+    font-size: 2rem;
+    padding: 50px 0;
+    color: white;
+    width: 100%;
+}
+
+#result, #video {
+    width: auto;
+    height: 50vh;
+    background: #cac9c9;
+}
+
+@media (max-width: 767px) {
+    #result, #video {
+        height: auto;
+        max-width: 90vw;
+    }
+}
+
+pre {
+    overflow: auto;
+    padding: 15px;
+}

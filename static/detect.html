@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Detect</title>
+</head>
+<body>
+
+<pre>
+Usage:
+curl -i -X POST -F "image=@person.jpg" http://localhost:5100/api/v1/detect-gender-and-age
+</pre>
+
+<div id="webCamBlock" class="centered">
+    <video autoplay="true" id="video"></video>
+    <div class="actions">
+        <button type="button" id="takeScreen">Take screen and detect</button>
+    </div>
+</div>
+<div id="webCamFallback" style="display: none;" class="centered">
+    <input type="file" id="imageInp">
+</div>
+<div class="centered">
+    <img id="result">
+</div>
+
+<div id="wait" style="display: none;">Wait...</div>
+
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="webcam.js"></script>
+</body>
+</html>

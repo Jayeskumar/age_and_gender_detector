@@ -1,0 +1,7 @@
+{
+  "name": "age-gender-detector",
+  "description": "Detect age and gender via rest api",
+  "repository": "https://github.com/grinat/age_gender_detector",
+  "stack": "container",
+  "success_url": "/"
+}

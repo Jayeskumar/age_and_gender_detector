@@ -1,0 +1,17 @@
+version: '2'
+services:
+  python.age_gender_detector:
+    ports:
+      - 5100:5100
+    container_name: age_gender_detector
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - .:/app
+    networks:
+      - age_gender_detector-network
+    command: ["make", "dev-docker-compose"]
+
+networks:
+  age_gender_detector-network:
